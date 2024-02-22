@@ -1,8 +1,12 @@
-server:
-  port: 8081
 spring:
   security:
     user:
       name: Juan
       password: 1234
+  application:
+    name: course-service
+  cloud:
+    config:
+      enabled: true
+      uri: http://localhost:8081
 
